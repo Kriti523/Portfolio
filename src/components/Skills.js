@@ -6,6 +6,7 @@ import cpp from "../assets/img/cpp.png"
 import git from "../assets/img/git.png"
 import js from "../assets/img/js.png"
 import canva from "../assets/img/canva.png"
+import linux from "../assets/img/linux-brands-solid.svg"
 import tailwind from "../assets/img/Tailwind.png"
 import sql from "../assets/img/sql.png"
 import 'react-multi-carousel/lib/styles.css';
@@ -57,6 +58,9 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={react} alt="Image" />
+                            </div>
+                            <div className="item">
+                                <img src={linux} alt="Image" />
                             </div>
                             <div className="item">
                                 <img src={tailwind} alt="Image" />

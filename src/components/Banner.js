@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Upcoming Software Engineer", "Web Developer", "Web Designer"];
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -46,6 +46,9 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  const openResume = () => {
+    window.open('resume-url.pdf', '_blank');
+  };
 
   return (
     <section className="banner" id="home">
@@ -56,9 +59,14 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Kriti`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>{`Hi! I'm Kriti |`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Hi, I’m Kriti, a B.Tech CSE student with a passion for tech and a zest for life. 
+                    I’m a foodie always on the lookout for new flavors and a math enthusiast who loves solving problems.
+                     My travels spark my curiosity, and my creative side shines through my designs on Canva. Whether I'm singing my 
+                     heart out or exploring new ideas, I bring joy and enthusiasm to everything I do. Join me as I blend my technical skills
+                      with creativity, adventure, and a love for life!
+</p>
+                  <button  variant="primary" onClick={openResume}> View My Resume </button>
               </div>}
             </TrackVisibility>
           </Col>
