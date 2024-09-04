@@ -16,35 +16,41 @@ export const Projects = () => {
       title: "Epestemico Website",
       description: "A dynamic website for my college's fest, 'Epestemico' created using HTML, CSS, and JavaScript, featuring event details, schedules, and an engaging user experience.",
       imgUrl: epis,
+      repoUrl: "https://github.com/Kriti523/Epistemico-23"
     },
     {
       title: "Rock, Paper and Scissors",
       description: "An interactive Rock, Paper, Scissors game built with HTML, CSS, and JavaScript, featuring a fun and responsive interface that allows users to play against the computer. & Development",
       imgUrl: RSP,
+      repoUrl:"https://github.com/Kriti523/Rock-paper-and-scissors-Game-"
     },
     {
       title: "Netflix Clone",
       description:
         "A pixel-perfect Netflix homepage clone built purely on HTML and CSS, showcasing attention to detail and design precision while replicating the original layout and styling.",
       imgUrl: netflix,
+      repoUrl: "https://github.com/Kriti523/Netflix_clone"
     },
     {
       title: "Weather App",
       description:
         "built with HTML, Bootstrap, and JavaScript that provides real-time weather data, including temperature, humidity, and wind speed, with a clean and responsive user interface.",
       imgUrl: weather_app,
+      repoUrl: "https://github.com/Kriti523/Weather_App"
     },
     {
       title: "TO-DO App",
       description:
         "A React-based to-do list application featuring full CRUD operations, allowing users to create, read, update, and delete tasks with ease.",
       imgUrl: todo,
+      repoUrl:"https://github.com/Kriti523/To-Do-List"
     },
     {
       title: "Login-Signup Page",
       description:
         "A React-based login/signup page with a backend supported by local storage, providing a seamless user authentication experience without relying on a server.",
       imgUrl: login,
+      repoUrl: "https://github.com/Kriti523/Login-Signup-Page"
     },
   ];
 
